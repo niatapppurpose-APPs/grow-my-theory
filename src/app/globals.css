@@ -1,0 +1,102 @@
+/**
+ * Global Styles for Dr. Maya Reynolds Therapy Website
+ * 
+ * COLOR PALETTE (Calm, Professional Therapy Theme):
+ * - Primary: Sage Green (#6B8E7B) - Calming, nature-inspired, healing
+ * - Secondary: Warm Cream (#F9F6F0) - Soft, welcoming backgrounds
+ * - Accent: Soft Terracotta (#C4A484) - Warm, inviting call-to-actions
+ * - Text Dark: Charcoal (#2D3436) - Easy to read, professional
+ * - Text Light: Warm Gray (#6B7280) - Secondary text
+ * 
+ * These colors were chosen to evoke feelings of:
+ * - Calm and safety (sage green)
+ * - Warmth and welcome (cream and terracotta)
+ * - Professionalism and trust (charcoal text)
+ */
+
+/* Import Tailwind base styles, components, and utilities */
+@import "tailwindcss";
+
+/* Custom CSS Variables for our therapy theme */
+:root {
+  /* Primary sage green - used for headers, buttons, accents */
+  --color-primary: #6B8E7B;
+  --color-primary-dark: #5A7A69;
+  --color-primary-light: #8BA99A;
+  
+  /* Secondary warm cream - used for backgrounds */
+  --color-secondary: #F9F6F0;
+  --color-secondary-dark: #EDE8DC;
+  
+  /* Accent terracotta - used for CTAs and highlights */
+  --color-accent: #C4A484;
+  --color-accent-dark: #B08D6B;
+  
+  /* Text colors */
+  --color-text-dark: #2D3436;
+  --color-text-light: #6B7280;
+  --color-text-white: #FFFFFF;
+}
+
+/* Base styles applied to the entire page */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-text-dark);
+  background-color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+/* Utility classes for our custom colors (use with Tailwind) */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-dark { background-color: var(--color-primary-dark); }
+.bg-primary-light { background-color: var(--color-primary-light); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-dark { background-color: var(--color-secondary-dark); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-accent-dark { background-color: var(--color-accent-dark); }
+
+.text-primary { color: var(--color-primary); }
+.text-primary-dark { color: var(--color-primary-dark); }
+.text-accent { color: var(--color-accent); }
+.text-dark { color: var(--color-text-dark); }
+.text-light { color: var(--color-text-light); }
+
+/* Button hover effects */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+/* Section spacing consistency */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
