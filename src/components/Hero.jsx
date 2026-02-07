@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
     <section className="bg-secondary min-h-screen flex items-center pt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-8 py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 
           {/* Image */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 mt-4 md:mt-0">
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop"
@@ -22,33 +22,33 @@ export default function Hero() {
               Licensed Clinical Psychologist
             </p>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-dark leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-dark leading-tight mb-4 md:mb-6">
               Anxiety, Trauma & Stress Therapy in{" "}
               <span className="text-primary">Santa Monica</span>
             </h1>
 
-            <p className="text-light text-lg md:text-xl mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-light text-base sm:text-lg md:text-xl mb-4 md:mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Find relief from anxiety, heal from trauma, and recover from burnout.
               I offer warm, evidence-based therapy for adults navigating overwhelming
               stress and emotional exhaustion.
             </p>
 
-            <p className="text-light text-base mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="text-light text-sm sm:text-base mb-6 md:mb-8 max-w-xl mx-auto lg:mx-0">
               Therapy is a space to slow down, feel supported, and begin making
               changes that feel sustainable and meaningful.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a
                 href="#contact"
-                className="btn-primary px-8 py-4 rounded-full text-lg font-medium text-center shadow-lg hover:shadow-xl transition"
+                className="btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium text-center shadow-lg hover:shadow-xl transition"
               >
                 Schedule a Consultation
               </a>
 
               <a
                 href="#services"
-                className="px-8 py-4 rounded-full text-lg font-medium text-primary border-2 border-primary hover:bg-primary hover:text-white transition text-center"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium text-primary border-2 border-primary hover:bg-primary hover:text-white transition text-center"
               >
                 Learn More
               </a>
